@@ -12,12 +12,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
 
-$mainColor: #d92332;
-$mainColor-light: #d9777f;
-$textColor: #454545;
+$red: #d92332;
+$red-light: #d9777f;
+$gray: #454545;
 $bg-color: #fbfbfb;
 $white: #ffffff;
-$light: #eaeaea;
+$light: #f7f7f7;
 
 $border-radius: 5px;
 $padding-btn-mobile: 12px 15px;
@@ -25,8 +25,7 @@ $padding-btn-desktop: 12px 30px;
 
 body {
   font-family: "Nunito", sans-serif, "arial", sans-serif;
-  letter-spacing: 0.5px;
-  color: $textColor;
+  color: $gray;
 
   section {
     width: 100%;
@@ -37,7 +36,7 @@ body {
   }
 
   .content {
-    margin: 80px 25px;
+    margin: 60px 25px;
   }
 
   h1,
@@ -50,6 +49,7 @@ body {
     margin-bottom: 55px;
     font-size: 2rem;
     text-align: center;
+    letter-spacing: 0.5px;
   }
 
   p {
@@ -62,7 +62,7 @@ body {
 
   @media screen and (min-width: 700px) {
     .content {
-      margin: 90px auto;
+      margin: 80px auto;
       width: 800px;
     }
   }
