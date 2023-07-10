@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif, "arial", sans-serif;
+  letter-spacing: 0.5px;
+  color: #454545;
+}
+body section {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .content {
+  margin: 80px 25px;
+}
+body h1,
+body h2,
+body h3 {
+  font-family: "Mukta", sans-serif, "Helvetica";
+}
+body h2 {
+  margin-bottom: 55px;
+  font-size: 2rem;
+  text-align: center;
+}
+body p {
+  text-align: justify;
+}
+body a {
+  color: inherit;
+}
+@media screen and (min-width: 700px) {
+  body .content {
+    margin: 90px auto;
+    width: 800px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

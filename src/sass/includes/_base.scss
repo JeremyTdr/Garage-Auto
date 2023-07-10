@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
+
+$mainColor: #d92332;
+$mainColor-light: #d9777f;
+$textColor: #454545;
+$bg-color: #fbfbfb;
+$white: #ffffff;
+$light: #eaeaea;
+
+$border-radius: 5px;
+$padding-btn-mobile: 12px 15px;
+$padding-btn-desktop: 12px 30px;
+
+body {
+  font-family: "Nunito", sans-serif, "arial", sans-serif;
+  letter-spacing: 0.5px;
+  color: $textColor;
+
+  section {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    margin: 80px 25px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Mukta", sans-serif, "Helvetica";
+  }
+
+  h2 {
+    margin-bottom: 55px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  @media screen and (min-width: 700px) {
+    .content {
+      margin: 90px auto;
+      width: 800px;
+    }
+  }
+}
