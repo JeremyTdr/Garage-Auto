@@ -1,0 +1,13 @@
+.occasions {
+  .occasions-content {
+    .occasions-text {
+      margin-bottom: 40px;
+      @media screen and (min-width: 700px) {
+        text-align: center;
+      }
+    }
+    .occasions-btn {
+      @include button;
+    }
+  }
+}

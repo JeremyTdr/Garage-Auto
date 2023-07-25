@@ -36,7 +36,7 @@
   }
 
   .nav-items.active {
-    display: block;
+    display: flex;
   }
 
   .fa-user {
@@ -44,7 +44,7 @@
   }
 
   .nav-item {
-    padding: 15px 0;
+    padding: 18px 0;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;

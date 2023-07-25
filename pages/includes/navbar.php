@@ -2,12 +2,12 @@
 
     <img class="logo" src="src/assets/logo-nobg.png" alt="logo du garage"></img>    
 
-    <ul class="nav-items" id="nav-items">
-        <li class="nav-item">Accueil</li>
-        <li class="nav-item">Nos services</li>
-        <li class="nav-item">Les occasions</li>
-        <li class="nav-item reserved">Nous contacter</li>
-    </ul>
+    <div class="nav-items" id="nav-items">
+        <a class="nav-item" href="/">Accueil</a>
+        <a class="nav-item" href="#services">Nos services</a>
+        <a class="nav-item" href="#occasions">Les occasions</a>
+        <a class="nav-item reserved">Nous contacter</a>
+    </div>
 
     <i class="fas fa-bars burger-btn" id="burger-btn"></i>
     
