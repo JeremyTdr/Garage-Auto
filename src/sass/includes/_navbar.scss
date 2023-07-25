@@ -31,7 +31,6 @@
     color: $gray;
     flex-direction: column;
     justify-content: flex-start;
-    font-size: 1.2rem;
     display: none;
     padding: 10px 20px;
   }
@@ -47,6 +46,8 @@
   .nav-item {
     padding: 15px 0;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 }
 
@@ -70,11 +71,10 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      gap: 25px;
+      gap: 32px;
       background-color: inherit;
 
       .nav-item {
-        font-size: 1.2rem;
         padding: 0;
       }
 
