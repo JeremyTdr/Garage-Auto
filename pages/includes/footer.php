@@ -1,3 +1,7 @@
+<?php
+    require('./actions/schedules/getSchedules.php');
+?>
+
 <footer>
     <div class="footer-items">
         <div class="footer-infos">
@@ -9,13 +13,16 @@
         <div class="footer-schedules">
             <h3>Horraires d'ouverture</h3>
             <ul class="schedules-list">
-                <li class="schedule">Lundi : 00 - 00</li>
-                <li class="schedule">Mardi : 00 - 00</li>
-                <li class="schedule">Mercredi : 00 - 00</li>
-                <li class="schedule">Jeudi : 00 - 00</li>
-                <li class="schedule">Vendredi : 00 - 00</li>
-                <li class="schedule">Samedi : 00 - 00</li>
-                <li class="schedule">Dimanche : Fermé</li>
+                <?php while($schedule = $getSchedules->fetch()){?>
+                <li class="schedule">
+                    <div class="schedule-day"><?= $schedule['day']; ?> :</div>
+
+                    <div class="schedule-hours">
+                        <?php if($schedule['open_am'] == 'Fermé'){echo 'Fermé';} else { echo $schedule['open_am']; ?>-<?= $schedule['close_am']; }?> | <?php if($schedule['open_pm'] == 'Fermé'){echo 'Fermé';} else { echo $schedule['open_pm']; ?>-<?= $schedule['close_pm']; }?></div> 
+                </li> 
+                <?php
+            
+            } ?>
             </ul>
         </div>
 
