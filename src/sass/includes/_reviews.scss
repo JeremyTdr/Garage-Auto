@@ -1,12 +1,13 @@
-.services {
-  .services-content {
-    .services-cards {
+.reviews {
+  .reviews-content {
+    .reviews-cards {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 50px;
+      margin-bottom: 40px;
 
-      .services-card {
+      .reviews-card {
         width: 240px;
         height: 230px;
         display: flex;
@@ -18,15 +19,9 @@
         border: 2px solid $gray;
       }
     }
-  }
 
-  @media screen and (min-width: 700px) {
-    .services-content {
-      .services-cards {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: inherit;
-      }
+    .reviews-btn {
+      @include button;
     }
   }
 }

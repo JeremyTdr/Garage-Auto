@@ -15,7 +15,7 @@
 $red: #d92332;
 $red-light: #d9777f;
 $gray: #454545;
-$bg-color: #fbfbfb;
+$bg-color: #fafafa;
 $white: #ffffff;
 $light: #f7f7f7;
 
@@ -66,6 +66,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:nth-child(2n + 1) {
+      background-color: $bg-color;
+    }
   }
 
   .content {

@@ -6,7 +6,7 @@
         <a class="nav-item" href="/">Accueil</a>
         <a class="nav-item" href="#services">Nos services</a>
         <a class="nav-item" href="#occasions">Les occasions</a>
-        <a class="nav-item reserved">Nous contacter</a>
+        <a class="nav-item" href="#contact">Nous contacter</a>
     </div>
 
     <i class="fas fa-bars burger-btn" id="burger-btn"></i>

@@ -4,5 +4,7 @@
 <?php include './pages/sections/resume.php'; ?>
 <?php include './pages/sections/services.php'; ?>
 <?php include './pages/sections/occasions.php'; ?>
+<?php include './pages/sections/reviews.php'; ?>
+<?php include './pages/sections/contact.php'; ?>
 
 <?php include './pages/includes/html-foot.php'; ?>
