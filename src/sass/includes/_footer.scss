@@ -1,0 +1,61 @@
+footer {
+  background-color: $gray;
+  color: $white;
+  padding: 30px 20px;
+
+  .footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    h3 {
+      font-weight: 500;
+    }
+
+    .footer-infos {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+
+      .footer-copyright {
+        font-weight: 700;
+      }
+    }
+
+    .footer-schedules {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+
+      .contact-infos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .fas {
+          padding-right: 10px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .footer-items {
+      flex-direction: row;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+}

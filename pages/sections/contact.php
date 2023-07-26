@@ -3,7 +3,8 @@
         <h2>Nous contacter</h2>
         <div class="contact-card">
             <div class="contact-infos">
-                <img class="logo" src="src/assets/logo-nobg.png" alt="logo du restaurant"></img>
+                <img class="logo" src="src/assets/logo-nobg.png" alt="logo du garage"></img>
+                <h3>Garage Auto V. Parrot</h3>
                 <ul class="infos-items">
                     <li class="infos-item"><i class="fas fa-map-marker-alt"></i>1 av. de Paris - 75000, Paris</li>
                     <li class="infos-item"><i class="fas fa-mobile-alt"></i>01 02 03 04 05</li>
