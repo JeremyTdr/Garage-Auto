@@ -5,7 +5,7 @@
 
   .employees-list {
     margin: 40px 0;
-    border: 3px solid $light;
+    border: 2px solid $light;
     border-radius: $border-radius;
 
     .list-item {
@@ -29,10 +29,23 @@
 
       .employee-btns {
         justify-content: end;
+
+        button {
+          cursor: pointer;
+        }
       }
     }
   }
-}
-
-@media screen and (min-width: 700px) {
+  @media screen and (min-width: 700px) {
+    .employees-list {
+      width: 80%;
+      margin: 40px auto;
+      .list-item {
+        .employee-btns {
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+  }
 }

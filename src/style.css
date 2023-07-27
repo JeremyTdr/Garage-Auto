@@ -111,18 +111,54 @@ body .modal .modal-content {
   width: 90%;
   margin: 20% auto;
   padding: 20px;
-  border: 1px solid #ececec;
   border-radius: 5px;
   background-color: #ffffff;
 }
 body .modal .modal-content .modal-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 40px;
 }
+body .modal .modal-content .modal-header h4 {
+  font-size: 1.2rem;
+}
 body .modal .modal-content .modal-header .close-modal {
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
+}
+body .modal .modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+body .modal .modal-content form label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+body .modal .modal-content form input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+body .modal .modal-content form button {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #d92332;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+}
+body .modal .modal-content form button:hover {
+  background-color: #d9777f;
 }
 body .modal.active {
   display: block;
@@ -131,6 +167,10 @@ body .modal.active {
   body .content {
     margin: 80px auto;
     width: 800px;
+  }
+  body .modal .modal-content {
+    width: 70%;
+    margin: 10% auto;
   }
 }
 
@@ -583,7 +623,7 @@ footer .footer-items .footer-contact .contact-infos .fas {
 }
 .employees-management .employees-list {
   margin: 40px 0;
-  border: 3px solid #ececec;
+  border: 2px solid #ececec;
   border-radius: 5px;
 }
 .employees-management .employees-list .list-item {
@@ -605,6 +645,19 @@ footer .footer-items .footer-contact .contact-infos .fas {
 }
 .employees-management .employees-list .list-item .employee-btns {
   justify-content: end;
+}
+.employees-management .employees-list .list-item .employee-btns button {
+  cursor: pointer;
+}
+@media screen and (min-width: 700px) {
+  .employees-management .employees-list {
+    width: 80%;
+    margin: 40px auto;
+  }
+  .employees-management .employees-list .list-item .employee-btns {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

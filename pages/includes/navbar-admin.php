@@ -1,7 +1,7 @@
 <nav class="nav">
 
     <img class="logo" src="src/assets/logo-nobg.png" alt="logo du garage"></img>  
-    <span>Console d'administration</span>  
+    <span>Centre d'administration</span>  
 
     <div class="nav-items" id="nav-items">
         <a class="nav-item" href="/admin.php">Employes</a>

@@ -5,7 +5,7 @@
 
         <div class="admin-section employees-management">
             
-                <div class="admin-title">Liste des employes</div>
+                <div class="admin-title">Liste des employés</div>
 
                 <div class="create-employee open-modal" id="create-employee"><i class="fas fa-plus"></i> Ajouter un employé</div>
                 
