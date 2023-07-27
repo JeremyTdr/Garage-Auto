@@ -21,3 +21,21 @@ document.addEventListener("click", function handleClickOutsideBox(e) {
     navItems.classList.remove("active");
   }
 });
+
+//-------- MODALS -------
+const modals = document.querySelectorAll(".modal");
+const modalsClose = document.querySelectorAll(".close-modal");
+const modalsOpen = document.querySelectorAll(".open-modal");
+const modalContent = document.querySelectorAll(".modal-content");
+
+for (let i = 0; i < modalsOpen.length; i++) {
+  modalsOpen[i].addEventListener("click", () => {
+    modals[i].classList.add("active");
+  });
+}
+
+for (let i = 0; i < modalsClose.length; i++) {
+  modalsClose[i].addEventListener("click", () => {
+    modals[i].classList.remove("active");
+  });
+}

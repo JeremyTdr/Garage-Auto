@@ -19,7 +19,7 @@
                         <input type="password" class="form-control" name="userPassword">
                     </div>
                 </div>
-                <span class="errorMsg"><?php if(isset($errorMsg)){ echo $errorMsg; } ?> </span>
+                <span class="errorMsg"><?php if(isset($errorMsg)){ echo $errorMsg; } ?></span>
                 <button type="submit" class="login-btn" name="login">Se connecter</button>
             </form>
         </div>
