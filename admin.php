@@ -1,6 +1,6 @@
 <?php 
 include 'pages/includes/html-head.php';
-
+require('actions/users/getEmployeesAction.php');
 ?>
 
     <body>
@@ -12,28 +12,19 @@ include 'pages/includes/html-head.php';
 
                 <a href="new-employee.php" class="create-employee" id="create-employee"><i class="fas fa-plus"></i> Ajouter un employé</a>
                 <span class="succesMsg">
-                <ul class="employees-list">    
-                    <li class="list-item">
-                        <div class="employee-infos">
-                            <span class="employee-username">Username</span>
-                            <span class="employee-email">Email</span>
-                        </div>
-                        <div class="employee-btns">
-                            <button class="modify-btn"><i class="far fa-edit"></i></button>
-                            <button class="delete-btn"><i class="fas fa-trash"></i></button>
-                        </div>
-                    </li>
-                    <li class="list-item">
-                        <div class="employee-infos">
-                            <span class="employee-username">Username</span>
-                            <span class="employee-email">Email</span>
-                        </div>
-                        <div class="employee-btns">
-                            <button class="modify-btn"><i class="far fa-edit"></i></button>
-                            <button class="delete-btn"><i class="fas fa-trash"></i></button>
-                        </div>
-                    </li>
-
+                <ul class="employees-list">
+                    <?php while($employee = $getEmployees->fetch()){ ?>
+                        <li class="list-item">
+                            <div class="employee-infos">
+                                <span class="employee-username"><?= $employee['username']; ?></span>
+                                <span class="employee-email"><?= $employee['email']; ?></span>
+                            </div>
+                            <div class="employee-btns">
+                                <button class="modify-btn"><i class="far fa-edit"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                    <?php } ?>
                 </ul>
            
 

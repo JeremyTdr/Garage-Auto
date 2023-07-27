@@ -646,7 +646,7 @@ footer .footer-items .footer-contact .contact-infos .fas {
 .employees-management .employees-list .list-item .employee-infos,
 .employees-management .employees-list .list-item .employee-btns {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   font-size: 1.1rem;
   padding: 5px;
   flex: 1;
