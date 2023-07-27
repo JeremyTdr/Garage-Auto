@@ -1,0 +1,64 @@
+.form-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form-login {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $light;
+    border-radius: $border-radius;
+
+    .logo {
+      width: 10rem;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    .login-input-contents {
+      width: 100%;
+      margin: 40px 0;
+      padding: 0 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .login-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        label {
+          font-size: 1.2rem;
+        }
+
+        input {
+          @include input;
+        }
+      }
+    }
+    .login-btn {
+      @include button;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .form-login {
+      padding: 30px 140px;
+    }
+  }
+}

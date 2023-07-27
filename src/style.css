@@ -55,6 +55,16 @@ body .content h2 {
   text-decoration-color: #d92332;
   text-underline-offset: 5px;
 }
+body .errorMsg {
+  margin-bottom: 20px;
+  color: #e60000;
+  font-size: 1.2rem;
+}
+body .successMsg {
+  margin-bottom: 20px;
+  color: #04d219;
+  font-size: 1.2rem;
+}
 @media screen and (min-width: 700px) {
   body .content {
     margin: 80px auto;
@@ -89,7 +99,7 @@ body .content h2 {
   width: auto;
   height: 100vh;
   top: 55px;
-  background-color: #f7f7f7;
+  background-color: #ececec;
   color: #454545;
   flex-direction: column;
   justify-content: flex-start;
@@ -245,6 +255,7 @@ footer .footer-items .footer-contact .contact-infos .fas {
   margin: 0 auto;
   padding: 12px 15px;
   border-radius: 5px;
+  border: none;
   color: #ffffff;
   background-color: #d92332;
   font-size: 1.1rem;
@@ -300,6 +311,7 @@ footer .footer-items .footer-contact .contact-infos .fas {
   margin: 0 auto;
   padding: 12px 15px;
   border-radius: 5px;
+  border: none;
   color: #ffffff;
   background-color: #d92332;
   font-size: 1.1rem;
@@ -332,6 +344,7 @@ footer .footer-items .footer-contact .contact-infos .fas {
   margin: 0 auto;
   padding: 12px 15px;
   border-radius: 5px;
+  border: none;
   color: #ffffff;
   background-color: #d92332;
   font-size: 1.1rem;
@@ -391,6 +404,7 @@ footer .footer-items .footer-contact .contact-infos .fas {
   margin: 0 auto;
   padding: 12px 15px;
   border-radius: 5px;
+  border: none;
   color: #ffffff;
   background-color: #d92332;
   font-size: 1.1rem;
@@ -410,6 +424,80 @@ footer .footer-items .footer-contact .contact-infos .fas {
   .contact .contact-content .contact-card .contact-form {
     flex: 2;
     height: auto;
+  }
+}
+
+/* Other pages */
+.form-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-content .form-login {
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ececec;
+  border-radius: 5px;
+}
+.form-content .form-login .logo {
+  width: 10rem;
+  margin-bottom: 8px;
+}
+.form-content .form-login h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+.form-content .form-login p {
+  font-size: 1.4rem;
+}
+.form-content .form-login .login-input-contents {
+  width: 100%;
+  margin: 40px 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-content .form-login .login-input-contents .login-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.form-content .form-login .login-input-contents .login-input label {
+  font-size: 1.2rem;
+}
+.form-content .form-login .login-input-contents .login-input input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.1rem;
+}
+.form-content .form-login .login-btn {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #d92332;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.form-content .form-login .login-btn:hover {
+  background-color: #d9777f;
+}
+@media screen and (min-width: 700px) {
+  .form-content .form-login {
+    padding: 30px 140px;
   }
 }
 

@@ -4,6 +4,6 @@
         <div class="reviews-cards">
             <div class="reviews-card">temoignage</div>
         </div>
-        <div class="reviews-btn">Laissez votre avis</div>
+        <button class="reviews-btn">Laissez votre avis</button>
     </div>
 </section>

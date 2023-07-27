@@ -3,8 +3,8 @@
     <div class="header-content">
         <h1>Garage Auto <br> V. Parrot</h1>
         <div class="header-btns">
-            <div class="header-btn">Nos services</div>
-            <div class="header-btn">Notre parc auto d'occasion</div>
+            <button class="header-btn">Nos services</button>
+            <button class="header-btn">Notre parc auto d'occasion</button>
         </div>
     </div>
 </section>

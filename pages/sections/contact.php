@@ -16,7 +16,7 @@
                 </div> 
             </div>
             <div class="contact-form">
-                <div class="contact-btn">Envoyer</div>
+                <button class="contact-btn">Envoyer</button>
             </div>
         </div>
         
