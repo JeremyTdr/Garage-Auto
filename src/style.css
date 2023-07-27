@@ -96,6 +96,44 @@ body .successMsg {
   color: #04d219;
   font-size: 1.2rem;
 }
+body form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+body form label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+body form label span {
+  font-size: 0.8rem;
+}
+body form input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+body form button {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #d92332;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+}
+body form button:hover {
+  background-color: #d9777f;
+}
 body .modal {
   position: fixed;
   z-index: 90;
@@ -127,39 +165,6 @@ body .modal .modal-content .modal-header .close-modal {
   font-size: 2rem;
   cursor: pointer;
 }
-body .modal .modal-content form {
-  display: flex;
-  flex-direction: column;
-}
-body .modal .modal-content form label {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-}
-body .modal .modal-content form input {
-  width: 100%;
-  height: 30px;
-  padding-left: 10px;
-  border: 1px solid #454545;
-  border-radius: 5px;
-  outline: none;
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-}
-body .modal .modal-content form button {
-  width: fit-content;
-  margin: 0 auto;
-  padding: 12px 15px;
-  border-radius: 5px;
-  border: none;
-  color: #ffffff;
-  background-color: #d92332;
-  font-size: 1.1rem;
-  cursor: pointer;
-  width: 100%;
-}
-body .modal .modal-content form button:hover {
-  background-color: #d9777f;
-}
 body .modal.active {
   display: block;
 }
@@ -167,6 +172,9 @@ body .modal.active {
   body .content {
     margin: 80px auto;
     width: 800px;
+  }
+  body form {
+    width: 600px;
   }
   body .modal .modal-content {
     width: 70%;

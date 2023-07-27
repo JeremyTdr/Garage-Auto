@@ -39,3 +39,7 @@ for (let i = 0; i < modalsClose.length; i++) {
     modals[i].classList.remove("active");
   });
 }
+
+function save_data() {
+  var formData = document.querySelectorAll(".form_data");
+}

@@ -1,4 +1,7 @@
-<?php include 'pages/includes/html-head.php'; ?>
+<?php 
+include 'pages/includes/html-head.php';
+
+?>
 
     <body>
         <?php include 'pages/includes/navbar-admin.php'; ?>
@@ -7,8 +10,8 @@
             
                 <div class="admin-title">Liste des employés</div>
 
-                <div class="create-employee open-modal" id="create-employee"><i class="fas fa-plus"></i> Ajouter un employé</div>
-                
+                <a href="new-employee.php" class="create-employee" id="create-employee"><i class="fas fa-plus"></i> Ajouter un employé</a>
+                <span class="succesMsg">
                 <ul class="employees-list">    
                     <li class="list-item">
                         <div class="employee-infos">
@@ -34,7 +37,7 @@
                 </ul>
            
 
-            <!--- MODAL --->
+            <!--- MODAL 
             <div class="modal">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -43,20 +46,20 @@
                     </div>
                     <form class="add-modal" method="POST">
                         <label for="employeeUsername" class="modal-label">Nom d'utilisateur</label>
-                        <input type="text" class="modal-input" name="employeeUsername">
+                        <input type="text" class="modal-input form_data" name="employeeUsername">
                         <label for="employeeEmail" class="modal-label">Adresse email</label>
-                        <input type="text" class="modal-input" name="employeeEmail">
-                        <label for="employeePassword" class="modal-label">Mot de passe</label>
-                        <input type="text" class="modal-input" name="employeePassword">
-                        <button class="btn-add-modal" type="submit" name="createEmployee">Ajouter</button>
-                    </form>
-                    
+                        <input type="text" class="modal-input form_data" name="employeeEmail">
+                        <label for="employeePassword" class="modal-label">Mot de passe <span>(minimum 6 caractères, 1 Majuscule, 1 Chiffre, 1 Caractère spécial)</span></label>
+                        <input type="text" class="modal-input form_data" name="employeePassword">
+                        <button class="btn-add-modal" type="submit" name="createEmployee" id="submit">Ajouter</button>
+                    </form> 
                 </div>
-            </div>
+            </div> --->
 
         </div>
     
         <!-- JS -->
         <script src="./src/js/app.js"></script>
+
     </body>
 </html>

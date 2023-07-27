@@ -145,6 +145,32 @@ body {
     font-size: 1.2rem;
   }
 
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+    label {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+
+      span {
+        font-size: 0.8rem;
+      }
+    }
+
+    input {
+      @include input;
+      margin-bottom: 25px;
+    }
+
+    button {
+      @include button;
+      width: 100%;
+    }
+  }
+
   //-------- MODALS --------
   .modal {
     position: fixed;
@@ -179,26 +205,6 @@ body {
           cursor: pointer;
         }
       }
-
-      form {
-        display: flex;
-        flex-direction: column;
-
-        label {
-          font-size: 1.1rem;
-          margin-bottom: 5px;
-        }
-
-        input {
-          @include input;
-          margin-bottom: 25px;
-        }
-
-        button {
-          @include button;
-          width: 100%;
-        }
-      }
     }
   }
   .modal.active {
@@ -209,6 +215,10 @@ body {
     .content {
       margin: 80px auto;
       width: 800px;
+    }
+
+    form {
+      width: 600px;
     }
 
     .modal {
