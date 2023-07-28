@@ -10,7 +10,7 @@ require('actions/users/getEmployeesAction.php');
             
                 <div class="admin-title">Liste des employés</div>
 
-                <a href="new-employee.php" class="create-employee" id="create-employee"><i class="fas fa-plus"></i> Ajouter un employé</a>
+                <a href="./new-employee.php" class="create-employee" id="create-employee"><i class="fas fa-plus"></i> Ajouter un employé</a>
                 <span class="succesMsg">
                 <ul class="employees-list">
                     <?php while($employee = $getEmployees->fetch()){ ?>
@@ -20,7 +20,7 @@ require('actions/users/getEmployeesAction.php');
                                 <span class="employee-email"><?= $employee['email']; ?></span>
                             </div>
                             <div class="employee-btns">
-                                <button class="modify-btn"><i class="far fa-edit"></i></button>
+                                <a href="edit-employee.php?id=<?= $employee['id']; ?>" class="modify-btn"><i class="far fa-edit"></i></a>
                                 <a href="./actions/users/deleteEmployeesAction.php?id=<?= $employee['id']; ?>" class="delete-btn"><i class="fas fa-trash"></i></a>
                             </div>
                         </li>

@@ -38,8 +38,10 @@ if(isset($_POST['createEmployee'])){
                     $addEmployee = $bdd->prepare('INSERT INTO employees(username, email, password)VALUES(?, ?, ?)');
                     $addEmployee->execute(array($employee_username, $employee_email, $employee_password));
                       
-                    $successMsg = "L'utilisateur a bien été ajouté.";
-                    header('Location: /admin.php');
+                    echo '<script>
+                            alert("Le compte a bien été ajotué");
+                            window.location.href="admin.php";
+                        </script>';
 
                 } else {
                     $errorMsg = "Cet utilisateur existe déjà";
