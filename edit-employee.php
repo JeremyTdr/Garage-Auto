@@ -11,13 +11,14 @@
             <div class="admin-title">Modifier un employé</div>
 
                 <form class="form-edit-employee" method="POST" enctype="multipart/form-data">
+                    <a href="./admin.php" class="return-btn"><i class="fas fa-chevron-left"></i> Retour</a>
+                    <br>
                     <label for="employeeUsername" class="modal-label">Nom d'utilisateur</label>
                     <input type="text" class="modal-input form_data" name="employeeUsername" value="<?=$user_username;?>">
                     <label for="employeeEmail" class="modal-label">Adresse email</label>
                     <input type="text" class="modal-input form_data" name="employeeEmail" value="<?=$user_email;?>">
                     <label for="employeePassword" class="modal-label">Mot de passe <span>(minimum 6 caractères, 1 Majuscule, 1 Chiffre, 1 Caractère spécial)</span></label>
                     <input type="password" class="modal-input form_data" name="employeePassword">
-                    <a href="./admin.php" class="return-btn">Retour</a>
                     <button class="btn-add-modal" type="submit" name="editEmployee" id="submit">Appliquer</button>
                     <br>
                     <span class="errorMsg"><?php if(isset($errorMsg)){ echo $errorMsg; } ?></span>

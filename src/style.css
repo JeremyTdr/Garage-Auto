@@ -72,7 +72,8 @@ body .admin-section .admin-title {
   font-weight: 700;
 }
 body .admin-section .modify-btn,
-body .admin-section .delete-btn {
+body .admin-section .delete-btn,
+body .admin-section .return-btn {
   font-size: 1.4rem;
   padding: 5px 10px;
   background-color: transparent;
@@ -86,6 +87,12 @@ body .admin-section .modify-btn {
 body .admin-section .delete-btn {
   border: 2px solid #d92332;
   color: #d92332;
+}
+body .admin-section .return-btn {
+  width: fit-content;
+  font-size: 1.1rem;
+  border: 2px solid #454545;
+  color: #454545;
 }
 body .admin-section .schedules-table {
   width: 100%;
@@ -215,6 +222,10 @@ body .modal.active {
   }
   body .admin-section .delete-btn:hover {
     background-color: #d92332;
+    color: #ffffff;
+  }
+  body .admin-section .return-btn:hover {
+    background-color: #454545;
     color: #ffffff;
   }
   body .modal .modal-content {

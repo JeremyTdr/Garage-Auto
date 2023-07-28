@@ -115,7 +115,8 @@ body {
     }
 
     .modify-btn,
-    .delete-btn {
+    .delete-btn,
+    .return-btn {
       font-size: 1.4rem;
       padding: 5px 10px;
       background-color: transparent;
@@ -131,6 +132,13 @@ body {
     .delete-btn {
       border: 2px solid $red;
       color: $red;
+    }
+
+    .return-btn {
+      width: fit-content;
+      font-size: 1.1rem;
+      border: 2px solid $gray;
+      color: $gray;
     }
 
     .schedules-table {
@@ -269,6 +277,11 @@ body {
 
       .delete-btn:hover {
         background-color: $red;
+        color: $white;
+      }
+
+      .return-btn:hover {
+        background-color: $gray;
         color: $white;
       }
     }

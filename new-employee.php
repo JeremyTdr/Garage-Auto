@@ -11,6 +11,8 @@ include 'pages/includes/html-head.php';
             <div class="admin-title">Ajouter un employé</div>
                 
                 <form class="form-add-employee" method="POST">
+                    <a href="./admin.php" class="return-btn"><i class="fas fa-chevron-left"></i> Retour</a>
+                    <br>
                     <label for="employeeUsername" class="modal-label">Nom d'utilisateur</label>
                     <input type="text" class="modal-input form_data" name="employeeUsername">
                     <label for="employeeEmail" class="modal-label">Adresse email</label>
