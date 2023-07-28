@@ -41,6 +41,9 @@
       width: 80%;
       margin: 40px auto;
       .list-item {
+        .employee-infos {
+          gap: 12px;
+        }
         .employee-btns {
           display: flex;
           gap: 20px;

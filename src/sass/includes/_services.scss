@@ -23,6 +23,7 @@
   @media screen and (min-width: 700px) {
     .services-content {
       .services-cards {
+        width: 100%;
         flex-direction: row;
         justify-content: space-between;
         gap: inherit;

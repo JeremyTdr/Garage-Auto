@@ -21,7 +21,7 @@ require('actions/users/getEmployeesAction.php');
                             </div>
                             <div class="employee-btns">
                                 <button class="modify-btn"><i class="far fa-edit"></i></button>
-                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                                <a href="./actions/users/deleteEmployeesAction.php?id=<?= $employee['id']; ?>" class="delete-btn"><i class="fas fa-trash"></i></a>
                             </div>
                         </li>
                     <?php } ?>
