@@ -77,18 +77,39 @@ body .admin-section .delete-btn {
   padding: 5px 10px;
   background-color: transparent;
   border-radius: 5px;
+  text-align: center;
 }
 body .admin-section .modify-btn {
   border: 2px solid #0390d2;
-}
-body .admin-section .modify-btn i {
   color: #0390d2;
 }
 body .admin-section .delete-btn {
   border: 2px solid #d92332;
-}
-body .admin-section .delete-btn i {
   color: #d92332;
+}
+body .admin-section .schedules-table {
+  width: 100%;
+  margin: 0 auto 40px;
+}
+body .admin-section .schedules-table tr {
+  display: flex;
+}
+body .admin-section .schedules-table tr th {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+body .admin-section .schedules-table tr td {
+  flex: 1;
+  font-size: 1.1rem;
+}
+body .admin-section .schedules-table tr td:nth-last-child(1) {
+  text-align: end;
+}
+body .admin-section .schedules-table .table-titles {
+  justify-content: space-between;
+}
+body .admin-section .schedules-table .table-contents {
+  margin-bottom: 6px;
 }
 body .errorMsg {
   margin-bottom: 20px;
@@ -179,6 +200,22 @@ body .modal.active {
   }
   body form {
     width: 600px;
+  }
+  body .admin-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  body .admin-section .modify-btn,
+  body .admin-section .delete-btn {
+    width: fit-content;
+  }
+  body .admin-section .modify-btn:hover {
+    background-color: #0390d2;
+    color: #ffffff;
+  }
+  body .admin-section .delete-btn:hover {
+    background-color: #d92332;
+    color: #ffffff;
   }
   body .modal .modal-content {
     width: 70%;
@@ -664,7 +701,7 @@ footer .footer-items .footer-contact .contact-infos .fas {
 }
 @media screen and (min-width: 700px) {
   .employees-management .employees-list {
-    width: 80%;
+    width: 100%;
     margin: 40px auto;
   }
   .employees-management .employees-list .list-item .employee-infos {

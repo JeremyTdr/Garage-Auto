@@ -1,6 +1,7 @@
 <?php 
-include 'pages/includes/html-head.php';
+require('actions/securityAction.php');
 require('actions/users/getEmployeesAction.php');
+include 'pages/includes/html-head.php';
 ?>
 
     <body>

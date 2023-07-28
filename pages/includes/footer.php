@@ -11,7 +11,7 @@
         </div>
     
         <div class="footer-schedules">
-            <h3>Horraires d'ouverture</h3>
+            <h3>Horaires d'ouverture</h3>
             <ul class="schedules-list">
                 <?php while($schedule = $getSchedules->fetch()){?>
                 <li class="schedule">

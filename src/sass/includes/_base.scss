@@ -120,19 +120,47 @@ body {
       padding: 5px 10px;
       background-color: transparent;
       border-radius: 5px;
+      text-align: center;
     }
 
     .modify-btn {
       border: 2px solid #0390d2;
-      i {
-        color: #0390d2;
-      }
+      color: #0390d2;
     }
 
     .delete-btn {
       border: 2px solid $red;
-      i {
-        color: $red;
+      color: $red;
+    }
+
+    .schedules-table {
+      width: 100%;
+      margin: 0 auto 40px;
+
+      tr {
+        display: flex;
+
+        th {
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+
+        td {
+          flex: 1;
+          font-size: 1.1rem;
+
+          &:nth-last-child(1) {
+            text-align: end;
+          }
+        }
+      }
+
+      .table-titles {
+        justify-content: space-between;
+      }
+
+      .table-contents {
+        margin-bottom: 6px;
       }
     }
   }
@@ -223,6 +251,26 @@ body {
 
     form {
       width: 600px;
+    }
+
+    .admin-section {
+      max-width: 800px;
+      margin: 0 auto;
+
+      .modify-btn,
+      .delete-btn {
+        width: fit-content;
+      }
+
+      .modify-btn:hover {
+        background-color: #0390d2;
+        color: $white;
+      }
+
+      .delete-btn:hover {
+        background-color: $red;
+        color: $white;
+      }
     }
 
     .modal {

@@ -1,7 +1,7 @@
 <?php 
-    include 'pages/includes/html-head.php';
     require('actions/securityAction.php');
     require('actions/users/editEmployeesAction.php');
+    include 'pages/includes/html-head.php';
 ?>
 
     <body>

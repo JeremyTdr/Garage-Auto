@@ -54,7 +54,7 @@ if(isset($_POST['editEmployee'])){
             echo '<script>
                     alert("La modification du compte à bien été effectuée");
                     window.location.href="admin.php";
-                </script>';
+                 </script>';
         }
 
     } else {
