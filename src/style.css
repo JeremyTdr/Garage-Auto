@@ -724,4 +724,27 @@ footer .footer-items .footer-contact .contact-infos .fas {
   }
 }
 
+.edit-hours .form-edit-hours .hours-day {
+  margin: 50px 0 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.edit-hours .form-edit-hours .select-hours {
+  display: flex;
+  justify-content: space-between;
+}
+.edit-hours .form-edit-hours .select-hours label {
+  flex: 1;
+}
+.edit-hours .form-edit-hours .select-hours select {
+  flex: 1;
+  font-size: 1.1rem;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  outline: none;
+}
+.edit-hours .form-edit-hours .select-hours span {
+  margin: 0 8px;
+}
+
 /*# sourceMappingURL=style.css.map */
