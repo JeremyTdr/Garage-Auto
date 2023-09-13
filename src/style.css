@@ -118,6 +118,23 @@ body .admin-section .schedules-table .table-titles {
 body .admin-section .schedules-table .table-contents {
   margin-bottom: 6px;
 }
+body .logout-btn {
+  color: #d92332;
+}
+body .create-btn {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #d92332;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+body .create-btn:hover {
+  background-color: #d9777f;
+}
 body .errorMsg {
   margin-bottom: 20px;
   color: #e60000;
@@ -151,6 +168,14 @@ body form input {
   font-size: 1.1rem;
   margin-bottom: 25px;
 }
+body form textarea {
+  margin-bottom: 25px;
+  padding-left: 10px;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.1rem;
+}
 body form button {
   width: fit-content;
   margin: 0 auto;
@@ -166,39 +191,39 @@ body form button {
 body form button:hover {
   background-color: #d9777f;
 }
-body .modal {
-  position: fixed;
-  z-index: 90;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: none;
-}
-body .modal .modal-content {
-  width: 90%;
-  margin: 20% auto;
-  padding: 20px;
+body .occasions-card {
+  width: 300px;
+  height: auto;
+  border: 1px solid #454545;
   border-radius: 5px;
-  background-color: #ffffff;
 }
-body .modal .modal-content .modal-header {
+body .occasions-card .occasions-img {
+  width: 100%;
+  height: 220px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  justify-content: center;
+  background-color: #ececec;
+  border-bottom: 1px solid #454545;
 }
-body .modal .modal-content .modal-header h4 {
-  font-size: 1.2rem;
+body .occasions-card .occasions-img img {
+  max-width: 100%;
 }
-body .modal .modal-content .modal-header .close-modal {
-  font-size: 2rem;
-  cursor: pointer;
+body .occasions-card .occasions-infos {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-body .modal.active {
-  display: block;
+body .occasions-card .occasions-infos .occasions-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .occasions-card .occasions-infos .occasions-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media screen and (min-width: 700px) {
   body .content {
@@ -488,6 +513,19 @@ footer .footer-items .footer-contact .contact-infos .fas {
   background-color: #d9777f;
 }
 
+.occasions-management .occasions-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin: 60px 0;
+}
+.occasions-management .occasions-list .occasions-btns {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+
 .reviews .reviews-content .reviews-cards {
   display: flex;
   align-items: center;
@@ -668,20 +706,6 @@ footer .footer-items .footer-contact .contact-infos .fas {
   }
 }
 
-.employees-management .create-employee {
-  width: fit-content;
-  margin: 0 auto;
-  padding: 12px 15px;
-  border-radius: 5px;
-  border: none;
-  color: #ffffff;
-  background-color: #d92332;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-.employees-management .create-employee:hover {
-  background-color: #d9777f;
-}
 .employees-management .employees-list {
   margin: 40px 0;
   border: 2px solid #ececec;
@@ -745,6 +769,20 @@ footer .footer-items .footer-contact .contact-infos .fas {
 }
 .edit-hours .form-edit-hours .select-hours span {
   margin: 0 8px;
+}
+.edit-hours .form-edit-hours .apply-edit-hours {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #d92332;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.edit-hours .form-edit-hours .apply-edit-hours:hover {
+  background-color: #d9777f;
 }
 
 /*# sourceMappingURL=style.css.map */

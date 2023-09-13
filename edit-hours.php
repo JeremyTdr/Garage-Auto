@@ -1,6 +1,7 @@
 <?php 
 require('actions/securityAction.php');
 require('./actions/schedules/getSchedules.php');
+require('./actions/schedules/editSchedulesAction.php');
 include 'pages/includes/html-head.php';
 ?>
 
@@ -18,8 +19,8 @@ include 'pages/includes/html-head.php';
                         <div class="hours-day"><?= $schedule['day']; ?></div>
 
                         <div class="select-hours">
-                            <label for="hours-morning" class="modal-label">Matin :</label>
-                            <select name="hoursMorning" id="morning-select">
+                            <label for="hours-morning">Matin :</label>
+                            <select name="morningOpen" id="morning-open-select">
                                 <option value=""><?php if($schedule['open_am'] == 'Fermé'){echo 'Fermé';} else { echo $schedule['open_am']; }?></option>
                                 <option value="8h">8h</option>
                                 <option value="8h30">8h30</option>
@@ -32,7 +33,7 @@ include 'pages/includes/html-head.php';
                                 <option value="Fermé">Fermé</option>
                             </select>
                             <span>-</span>
-                            <select name="hoursMorning" id="morning-select">
+                            <select name="morningClose" id="morning-close-select">
                                 <option value=""><?php if($schedule['close_am'] == 'Fermé'){echo 'Fermé';} else { echo $schedule['close_am']; }?></option>
                                 <option value="8h">8h</option>
                                 <option value="8h30">8h30</option>
@@ -47,8 +48,8 @@ include 'pages/includes/html-head.php';
                         </div>
                         <br>
                         <div class="select-hours">
-                        <label for="hours-afternoon" class="modal-label">Après-midi :</label>
-                        <select name="hoursAfternoon" id="afternoon-select">
+                        <label for="hours-afternoon">Après-midi :</label>
+                        <select name="afternoonOpen" id="afternoon-open-select">
                             <option value=""><?php if($schedule['open_pm'] == 'Fermé'){echo 'Fermé';} else { echo $schedule['open_pm']; }?></option>
                             <option value="12h">12h</option>
                             <option value="12h30">12h30</option>
@@ -70,7 +71,7 @@ include 'pages/includes/html-head.php';
                             <option value="Fermé">Fermé</option>
                         </select>
                         <span>-</span>
-                        <select name="hoursAfternoon" id="afternoon-select">
+                        <select name="afternoonClose" id="afternoon-close-select">
                             <option value=""><?php if($schedule['close_pm'] == 'Fermé'){echo 'Fermé';} else { echo $schedule['close_pm']; }?></option>
                             <option value="12h">12h</option>
                             <option value="12h30">12h30</option>
@@ -96,8 +97,8 @@ include 'pages/includes/html-head.php';
                     <?php } ?>
 
                     <br><br>
-                
-                <a href="edit-hours.php" class="modify-btn">Appliquer</a>
+                    <button class="apply-edit-hours" type="submit" name="editHours" id="submit">Appliquer</button>
+                </form>
         </div>
     
         <!-- JS -->

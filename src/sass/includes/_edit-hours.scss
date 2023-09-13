@@ -25,5 +25,9 @@
         margin: 0 8px;
       }
     }
+
+    .apply-edit-hours {
+      @include button;
+    }
   }
 }

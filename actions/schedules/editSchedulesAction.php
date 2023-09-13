@@ -2,22 +2,20 @@
 
 require ('actions/database.php');
 
-if(isset($_POST['publish'])){
-        if(!empty($_POST['titleOffer']) AND !empty($_POST['descriptionOffer']) AND !empty($_POST['locOffer']) AND !empty($_POST['salaryOffer'])){
+if(isset($_POST['editHours'])){
     
-            $new_title_offer= htmlspecialchars($_POST['titleOffer']);
-            $new_description_offer= nl2br(htmlspecialchars($_POST['descriptionOffer']));
-            $new_details_offer= nl2br(htmlspecialchars($_POST['detailsOffer']));
-            $new_loc_offer= htmlspecialchars($_POST['locOffer']);
-            $new_salary_offer= htmlspecialchars($_POST['salaryOffer']);
+            $new_am_open= htmlspecialchars($_POST['morningOpen']);
+            $new_am_close= nl2br(htmlspecialchars($_POST['morningClose']));
+            $new_pm_open= nl2br(htmlspecialchars($_POST['afternoonOpen']));
+            $new_pm_close= htmlspecialchars($_POST['afternoonClose']);
     
-            $editOffer = $bdd->prepare('UPDATE offers SET title = ?, description = ?, details = ?, location = ?, salary = ? WHERE id = ?');
-            $editOffer->execute(array($new_title_offer, $new_description_offer, $new_details_offer, $new_loc_offer, $new_salary_offer, $offerId));
+            $editHours = $bdd->prepare('UPDATE schedules SET open_am = ?, close_am = ?, open_pm = ?, close_pm = ?');
+            $editHours->execute(array($new_am_open, $new_am_close, $new_pm_open, $new_pm_close));
     
-            header('Location: my-offers.php');
-    
-        } else {
-            $errorMsg = "Veuillez completer tous les champs.";
-        }
+            echo '<script>
+                    alert("La modification du compte à bien été effectuée");
+                    window.location.href="hours.php";
+                 </script>';
+
 }
 

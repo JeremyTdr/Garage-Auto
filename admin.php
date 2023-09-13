@@ -11,8 +11,8 @@ include 'pages/includes/html-head.php';
             
                 <div class="admin-title">Liste des employés</div>
 
-                <a href="./new-employee.php" class="create-employee" id="create-employee"><i class="fas fa-plus"></i> Ajouter un employé</a>
-                <span class="succesMsg">
+                <a href="./new-employee.php" class="create-btn" id="create-employee"><i class="fas fa-plus"></i> Ajouter un employé</a>
+      
                 <ul class="employees-list">
                     <?php while($employee = $getEmployees->fetch()){ ?>
                         <li class="list-item">
