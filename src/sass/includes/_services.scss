@@ -6,16 +6,35 @@
       align-items: center;
       gap: 50px;
 
-      .services-card {
-        width: 240px;
-        height: 230px;
+      .service-card {
+        width: 260px;
+        height: 250px;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        font-size: 1.6rem;
-        font-weight: 700;
+        padding: 15px 10px;
         border-radius: $border-radius;
         border: 2px solid $gray;
+        gap: 10px;
+
+        .service-card-title {
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+
+        hr {
+          overflow: visible;
+          width: 50%;
+          background-color: $gray;
+          height: 1px;
+          border: none;
+        }
+
+        .service-card-description {
+          font-weight: 300;
+          font-size: 1rem;
+          text-align: justify;
+        }
       }
     }
   }
@@ -27,6 +46,38 @@
         flex-direction: row;
         justify-content: space-between;
         gap: inherit;
+
+        .service-card {
+          cursor: pointer;
+          align-items: center;
+          justify-content: center;
+          width: 240px;
+          height: 230px;
+
+          hr {
+            display: none;
+          }
+
+          .service-card-description {
+            position: absolute;
+            width: 240px;
+            height: 230px;
+            font-weight: 300;
+            text-align: justify;
+            color: $white;
+            padding: 15px;
+            border-radius: $border-radius;
+            background-color: black;
+            opacity: 0.8;
+            display: none;
+          }
+        }
+
+        .service-card:hover {
+          .service-card-description {
+            display: block;
+          }
+        }
       }
     }
   }

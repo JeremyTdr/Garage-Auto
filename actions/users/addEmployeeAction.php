@@ -39,7 +39,7 @@ if(isset($_POST['createEmployee'])){
                     $addEmployee->execute(array($employee_username, $employee_email, $employee_password));
                       
                     echo '<script>
-                            alert("Le compte a bien été ajotué");
+                            alert("Le compte a bien été ajouté");
                             window.location.href="admin.php";
                         </script>';
 

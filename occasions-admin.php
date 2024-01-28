@@ -14,7 +14,7 @@ include 'pages/includes/html-head.php';
 
                     <div class="occasions-list">
                         <?php while($occasion = $getOccasions->fetch()){ ?>
-                            <div class="occasions-card">
+                            <div class="occasions-card" onclick="location.href='/occasion-admin-details.php?id=<?= $occasion['id']; ?>'">
                                 <div class="occasions-img" >
                                     <img src="<?= $occasion['img']; ?>"></img>
                                 </div>    

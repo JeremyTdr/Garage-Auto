@@ -48,11 +48,9 @@ if(isset($_POST['editEmployee'])){
 
             $editUser = $bdd->prepare('UPDATE employees SET username = ?, email = ?, password = ? WHERE id = ?');
             $editUser->execute(array($new_user_username, $new_user_email, $new_user_password, $userId));
-        
-            $successMsg = "La modification du compte à bien été effectuée";
 
             echo '<script>
-                    alert("La modification du compte à bien été effectuée");
+                    alert("La modification du compte a bien été effectuée");
                     window.location.href="admin.php";
                  </script>';
         }

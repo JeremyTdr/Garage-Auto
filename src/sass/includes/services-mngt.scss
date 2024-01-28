@@ -1,0 +1,55 @@
+.services-management {
+  .services-list {
+    margin: 40px 0;
+    border: 2px solid $light;
+    border-radius: $border-radius;
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 4px;
+
+      &:nth-child(2n) {
+        background-color: $light;
+      }
+
+      .service-infos,
+      .service-btns {
+        display: flex;
+        gap: 8px;
+        font-size: 1.1rem;
+        padding: 5px;
+        flex: 1;
+      }
+
+      .service-title {
+        font-weight: 600;
+        font-size: 1.4rem;
+      }
+
+      .service-btns {
+        justify-content: end;
+
+        button {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .services-list {
+      width: 100%;
+      margin: 40px auto;
+      .list-item {
+        .service-infos {
+          gap: 12px;
+        }
+        .service-btns {
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}

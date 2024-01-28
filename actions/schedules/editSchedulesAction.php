@@ -13,7 +13,7 @@ if(isset($_POST['editHours'])){
             $editHours->execute(array($new_am_open, $new_am_close, $new_pm_open, $new_pm_close));
     
             echo '<script>
-                    alert("La modification du compte à bien été effectuée");
+                    alert("La modification des horaires à bien été effectuée");
                     window.location.href="hours.php";
                  </script>';
 
