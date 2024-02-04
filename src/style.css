@@ -59,6 +59,15 @@ body section .content h2 {
   text-decoration-color: #d92332;
   text-underline-offset: 5px;
 }
+body .page-title {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration-line: underline;
+  text-decoration-color: #d92332;
+  text-underline-offset: 5px;
+}
 body .admin-section {
   width: 100%;
   margin: 0;
@@ -463,11 +472,11 @@ footer .footer-items .footer-contact .contact-infos .fas {
   .services .services-content .services-cards {
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
-    gap: inherit;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
   }
   .services .services-content .services-cards .service-card {
-    cursor: pointer;
     align-items: center;
     justify-content: center;
     width: 240px;

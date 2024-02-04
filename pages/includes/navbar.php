@@ -5,7 +5,7 @@
     <div class="nav-items" id="nav-items">
         <a class="nav-item" href="/">Accueil</a>
         <a class="nav-item" href="#services">Nos services</a>
-        <a class="nav-item" href="#occasions">Les occasions</a>
+        <a class="nav-item" href="/autos-occasion.php">Les occasions</a>
         <a class="nav-item" href="#contact">Nous contacter</a>
     </div>
 

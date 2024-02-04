@@ -44,11 +44,11 @@
       .services-cards {
         width: 100%;
         flex-direction: row;
-        justify-content: space-between;
-        gap: inherit;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
 
         .service-card {
-          cursor: pointer;
           align-items: center;
           justify-content: center;
           width: 240px;
