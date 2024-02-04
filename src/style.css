@@ -651,21 +651,25 @@ footer .footer-items .footer-contact .contact-infos .fas {
   background-color: #d9777f;
 }
 
+.contact .contact-content {
+  width: 100%;
+}
 .contact .contact-content .contact-card {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  border: 3px solid #fafafa;
+  border: 1px solid #ececec;
   border-radius: 5px;
 }
 .contact .contact-content .contact-card .contact-infos {
   width: 100%;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
   padding: 30px 10px;
   gap: 30px;
+  border-radius: 5px;
 }
 .contact .contact-content .contact-card .contact-infos .logo {
   width: 10rem;
@@ -694,33 +698,39 @@ footer .footer-items .footer-contact .contact-infos .fas {
 }
 .contact .contact-content .contact-card .contact-form {
   background-color: #fafafa;
-  padding: 30px 10px;
-}
-.contact .contact-content .contact-card .contact-form .contact-btn {
-  width: fit-content;
-  margin: 0 auto;
-  padding: 12px 15px;
+  padding: 20px 10px;
   border-radius: 5px;
-  border: none;
-  color: #ffffff;
-  background-color: #d92332;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-.contact .contact-content .contact-card .contact-form .contact-btn:hover {
-  background-color: #d9777f;
 }
 @media screen and (min-width: 700px) {
+  .contact .contact-content {
+    width: 800px;
+  }
   .contact .contact-content .contact-card {
     flex-direction: row;
   }
   .contact .contact-content .contact-card .contact-infos {
     align-items: flex-start;
-    flex: 1;
+    width: 35%;
+    padding: 30px 20px;
+  }
+  .contact .contact-content .contact-card .contact-infos .logo,
+  .contact .contact-content .contact-card .contact-infos h3,
+  .contact .contact-content .contact-card .contact-infos .socials {
+    margin: 0 auto;
+  }
+  .contact .contact-content .contact-card .contact-infos .socials {
+    gap: 20px;
   }
   .contact .contact-content .contact-card .contact-form {
-    flex: 2;
-    height: auto;
+    width: 65%;
+    padding: 30px 20px;
+  }
+  .contact .contact-content .contact-card .contact-form form {
+    width: auto;
+  }
+  .contact .contact-content .contact-card .contact-form form button {
+    width: auto;
+    margin-right: 0;
   }
 }
 

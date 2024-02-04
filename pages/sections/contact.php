@@ -16,7 +16,21 @@
                 </div> 
             </div>
             <div class="contact-form">
-                <button class="contact-btn">Envoyer</button>
+                <form class="contact-msg" method="POST">
+                    <label for="mailNom">Nom</label>
+                    <input type="text" class="form_data" name="mailNom">
+                    <label for="mailPrenom">Prénom</label>
+                    <input type="text" class="form_data" name="mailPrenom">
+                    <label for="mailEmail">Email</label>
+                    <input type="text" class="form_data" name="mailEmail" required="required">
+                    <label for="mailTel">Téléphone</label>
+                    <input type="text" class="form_data" name="mailTel">
+                    <label for="mailMessage">Votre message</label>
+                    <textarea name="mailMessage" rows="10" required="required"></textarea>
+                   
+                    <button class="contact-btn" type="submit" name="mailEnvoi" id="submit">Envoyer</button>
+                    <br>  
+                </form>
             </div>
         </div>
         
