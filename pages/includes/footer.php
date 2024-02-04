@@ -9,7 +9,16 @@
             <div class="footer-copyright-bis">Tous droits reservés</div>
             <div class="footer-terms">Conditions générales</div>
         </div>
-    
+
+        <div class="footer-contact">
+            <h3>Informations</h3>
+            <ul class="contact-infos">
+                <li class="contact-info"><i class="fas fa-map-marker-alt"></i>1 av. de Paris - 75000, Paris</li>
+                <li class="contact-info"><i class="fas fa-mobile-alt"></i>01 02 03 04 05</li>
+                <li class="contact-info"><i class="fas fa-envelope"></i>contact@garage-parrot.fr</li>
+            </ul>
+        </div>
+
         <div class="footer-schedules">
             <h3>Horaires d'ouverture</h3>
             <ul class="schedules-list">
@@ -23,15 +32,6 @@
                 <?php
             
             } ?>
-            </ul>
-        </div>
-
-        <div class="footer-contact">
-            <h3>Informations</h3>
-            <ul class="contact-infos">
-                <li class="contact-info"><i class="fas fa-map-marker-alt"></i>1 av. de Paris - 75000, Paris</li>
-                <li class="contact-info"><i class="fas fa-mobile-alt"></i>01 02 03 04 05</li>
-                <li class="contact-info"><i class="fas fa-envelope"></i>contact@garage-parrot.fr</li>
             </ul>
         </div>
     </div>
