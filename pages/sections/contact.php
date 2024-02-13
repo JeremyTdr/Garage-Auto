@@ -28,7 +28,7 @@
                     <label for="mailMessage">Votre message</label>
                     <textarea name="mailMessage" rows="10" required="required"></textarea>
                    
-                    <button class="contact-btn" type="submit" name="mailEnvoi" id="submit">Envoyer</button>
+                    <button type="submit" name="mailEnvoi" id="submit">Envoyer</button>
                     <br>  
                 </form>
             </div>
