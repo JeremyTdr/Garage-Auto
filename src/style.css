@@ -80,6 +80,10 @@ body .admin-section .admin-title {
   font-size: 1.8rem;
   font-weight: 700;
 }
+body .admin-section .admin-text {
+  text-align: center;
+  font-size: 1.1rem;
+}
 body .admin-section .modify-btn,
 body .admin-section .delete-btn,
 body .admin-section .return-btn {
