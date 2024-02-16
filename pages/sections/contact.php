@@ -1,3 +1,7 @@
+<?php
+require ('actions/mail.php');
+?>
+
 <section class="contact" id="contact">
     <div class="content contact-content">
         <h2>Nous contacter</h2>
@@ -16,19 +20,19 @@
                 </div> 
             </div>
             <div class="contact-form">
-                <form class="contact-msg" method="POST">
+                <form class="contact-msg" method="POST" enctype="multipart/form-data">
                     <label for="mailNom">Nom</label>
-                    <input type="text" class="form_data" name="mailNom">
+                    <input type="text" name="mailNom" required="required">
                     <label for="mailPrenom">Prénom</label>
-                    <input type="text" class="form_data" name="mailPrenom">
+                    <input type="text" name="mailPrenom" required="required">
                     <label for="mailEmail">Email</label>
-                    <input type="text" class="form_data" name="mailEmail" required="required">
+                    <input type="text" name="mailEmail" required="required">
                     <label for="mailTel">Téléphone</label>
-                    <input type="text" class="form_data" name="mailTel">
+                    <input type="text" name="mailTel" required="required">
                     <label for="mailMessage">Votre message</label>
                     <textarea name="mailMessage" rows="10" required="required"></textarea>
                    
-                    <button type="submit" name="mailEnvoi" id="submit">Envoyer</button>
+                    <button type="submit" name="submit" id="submit">Envoyer</button>
                     <br>  
                 </form>
             </div>
