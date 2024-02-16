@@ -10,8 +10,8 @@
             $mail = htmlspecialchars($_POST['mailEmail']);
             $message = htmlspecialchars($_POST['mailMessage']);
 
-            $mailFrom = "jeremy.tdr@gmail.com";
-            $mailTo = "jeremy.tdr@gmail.com";
+            $mailFrom = "jtdr.dev@gmail.com";
+            $mailTo = "jtdr.dev@gmail.com";
 
             $headers = "From: $mailFrom \r\n";
             $headers .= "Reply-to: $mail \r\n";
@@ -23,10 +23,10 @@
                 <body>
                     <div align="left" style="color: black">
                         <ul>
-                            <li>Nom :'.$lastname.'</li>
-                            <li>Prénom :'.$firstname.'</li>
-                            <li>Téléphone :'.$phone.'</li>
-                            <li>Mail :'.$mail.'</li>
+                            <li>Nom :' .$lastname.'</li>
+                            <li>Prénom :' .$firstname.'</li>
+                            <li>Téléphone :' .$phone.'</li>
+                            <li>Mail :' .$mail.'</li>
                         <ul>
                         <br />
                         '.$message.'
