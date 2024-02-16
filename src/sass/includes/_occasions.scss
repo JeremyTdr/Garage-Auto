@@ -13,6 +13,33 @@
 }
 
 .occasions-management {
+  .filter-section {
+    border-bottom: 1px solid $light;
+    border-top: 1px solid $light;
+    .filter-content {
+      width: 100%;
+      margin: 20px auto;
+      .filters {
+        .filter {
+          display: flex;
+          justify-content: space-between;
+          label {
+            width: 120px;
+          }
+          input {
+            width: 60px;
+          }
+        }
+      }
+    }
+
+    .filter-btn {
+      @include button;
+      margin-top: 20px;
+      margin-right: 0;
+    }
+  }
+
   .occasions-list {
     display: flex;
     flex-direction: column;
@@ -34,6 +61,7 @@
         justify-content: center;
         background-color: $light;
         border-bottom: 1px solid $gray;
+        border-radius: $border-radius;
 
         img {
           max-width: 100%;
@@ -96,6 +124,25 @@
 
 @media screen and (min-width: 700px) {
   .occasions-management {
+    .filter-section {
+      margin-top: 40px;
+      .filter-content {
+        .filters {
+          display: flex;
+          justify-content: space-between;
+          .filter {
+            label {
+              width: fit-content;
+              margin-right: 10px;
+            }
+            span {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+
     .occasions-list {
       flex-direction: row;
       align-items: center;

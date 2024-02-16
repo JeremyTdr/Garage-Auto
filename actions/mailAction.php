@@ -38,9 +38,6 @@
             mail($mailTo, 'Nouveau message du site', $email_body, $headers);
 
             $msg= "<script language=javascript> alert('Votre message a bien été envoyé !') </script>";
-
-        } else {
-            $msg = "Veuillez renseigner tous les champs";
         }
     }
                     

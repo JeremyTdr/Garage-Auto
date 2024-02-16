@@ -20,7 +20,6 @@ require ('actions/mailAction.php');
                 </div> 
             </div>
             <div class="contact-form">
-                <?php echo $msg; ?> 
                 <form class="contact-msg" method="POST" enctype="multipart/form-data">
                     <label for="mailNom">Nom</label>
                     <input type="text" name="mailNom" required="required">
