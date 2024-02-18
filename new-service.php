@@ -9,6 +9,9 @@ include 'pages/includes/html-head.php';
         <?php include 'pages/includes/navbar-admin.php'; ?>
 
         <div class="admin-section new-service">
+
+            <?php if($_SESSION['is_admin'] == "1"){ ?>
+
             <div class="admin-title">Ajouter un service</div>
                 
                 <form class="form-add-service" method="POST" enctype="multipart/form-data">
@@ -25,7 +28,9 @@ include 'pages/includes/html-head.php';
                     <span class="errorMsg"><?php if(isset($errorMsg)){ echo $errorMsg; } ?></span>
                 </form>
 
-   
+            <?php } else { ?>
+            <p class="denied-msg">Vous n'avez pas accès à cette ressource</p>
+            <?php } ?>
 
         </div>
     

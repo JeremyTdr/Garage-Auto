@@ -8,6 +8,8 @@ include 'pages/includes/html-head.php';
         <?php include 'pages/includes/navbar-admin.php'; ?>
 
         <div class="admin-section hours-management">
+        
+        <?php if($_SESSION['is_admin'] == "1"){ ?>
             
                 <div class="admin-title">Horaires du garage</div>
 
@@ -28,6 +30,11 @@ include 'pages/includes/html-head.php';
                 </table>
                 
                 <a href="edit-hours.php" class="modify-btn">Modifier</a>
+            
+            <?php } else { ?>
+            <p class="denied-msg">Vous n'avez pas accès à cette ressource</p>
+            <?php } ?>
+            
         </div>
     
         <!-- JS -->

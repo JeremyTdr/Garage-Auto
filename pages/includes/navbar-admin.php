@@ -10,7 +10,7 @@
             <a class="nav-item" href="/employes-admin.php">Employes</a>
             <a class="nav-item" href="/services-admin.php">Services</a>
             <a class="nav-item" href="/occasions-admin.php">Occasions</a>
-            <a class="nav-item" href="/hours.php">Horaires</a>
+            <a class="nav-item" href="/hours-admin.php">Horaires</a>
         <?php 
         } elseif ($_SESSION['is_admin'] == "0"){
             ?>

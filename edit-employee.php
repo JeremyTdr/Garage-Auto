@@ -8,6 +8,9 @@
         <?php include 'pages/includes/navbar-admin.php'; ?>
 
         <div class="admin-section edit-employee">
+
+            <?php if($_SESSION['is_admin'] == "1"){ ?>
+
             <div class="admin-title">Modifier un employé</div>
 
                 <form class="form-edit-employee" method="POST" enctype="multipart/form-data">
@@ -23,6 +26,10 @@
                     <br>
                     <span class="errorMsg"><?php if(isset($errorMsg)){ echo $errorMsg; } ?></span>
                 </form>
+
+                <?php } else { ?>
+                <p class="denied-msg">Vous n'avez pas accès à cette ressource</p>
+                <?php } ?>
 
             </div>
     

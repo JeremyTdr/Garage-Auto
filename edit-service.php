@@ -8,10 +8,13 @@
         <?php include 'pages/includes/navbar-admin.php'; ?>
 
         <div class="admin-section edit-services">
+
+            <?php if($_SESSION['is_admin'] == "1"){ ?>
+
             <div class="admin-title">Modifier un service</div>
 
                 <form class="form-edit-service" method="POST" enctype="multipart/form-data">
-                    <a href="./admin.php" class="return-btn"><i class="fas fa-chevron-left"></i> Retour</a>
+                    <a href="./services-admin.php" class="return-btn"><i class="fas fa-chevron-left"></i> Retour</a>
                     <br>
                     <label for="serviceTitle" class="modal-label">Titre</label>
                     <input type="text" class="modal-input form_data" name="serviceTitle" value="<?=$service_title;?>">
@@ -22,6 +25,10 @@
                     <br>
                     <span class="errorMsg"><?php if(isset($errorMsg)){ echo $errorMsg; } ?></span>
                 </form>
+            
+                <?php } else { ?>
+                <p class="denied-msg">Vous n'avez pas accès à cette ressource</p>
+                <?php } ?>
 
             </div>
     

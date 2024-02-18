@@ -10,6 +10,8 @@ include 'pages/includes/html-head.php';
 
         <div class="admin-section edit-hours">
 
+            <?php if($_SESSION['is_admin'] == "1"){ ?>
+
             <div class="admin-title">Modifier les horaires</div>
 
                 <form class="form-edit-hours" method="POST" enctype="multipart/form-data">
@@ -99,6 +101,10 @@ include 'pages/includes/html-head.php';
                     <br><br>
                     <button class="apply-edit-hours" type="submit" name="editHours" id="submit">Appliquer</button>
                 </form>
+
+                <?php } else { ?>
+                <p class="denied-msg">Vous n'avez pas accès à cette ressource</p>
+                <?php } ?>
         </div>
     
         <!-- JS -->

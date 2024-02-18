@@ -119,6 +119,10 @@ body {
     flex-direction: column;
     padding: 40px 12px;
 
+    .denied-msg {
+      margin: 40px auto;
+    }
+
     .admin-title {
       margin: 0 auto 40px;
       font-size: 1.8rem;
@@ -133,7 +137,7 @@ body {
     .modify-btn,
     .delete-btn,
     .return-btn {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       padding: 5px 10px;
       background-color: transparent;
       border-radius: 5px;

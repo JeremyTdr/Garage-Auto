@@ -8,10 +8,13 @@ include 'pages/includes/html-head.php';
         <?php include 'pages/includes/navbar-admin.php'; ?>
 
         <div class="admin-section new-employee">
+
+            <?php if($_SESSION['is_admin'] == "1"){ ?>
+
             <div class="admin-title">Ajouter un employé</div>
                 
                 <form class="form-add-employee" method="POST">
-                    <a href="./admin.php" class="return-btn"><i class="fas fa-chevron-left"></i> Retour</a>
+                    <a href="./employes-admin.php" class="return-btn"><i class="fas fa-chevron-left"></i> Retour</a>
                     <br>
                     <label for="employeeUsername" class="modal-label">Nom d'utilisateur</label>
                     <input type="text" class="modal-input form_data" name="employeeUsername">
@@ -24,7 +27,9 @@ include 'pages/includes/html-head.php';
                     <span class="errorMsg"><?php if(isset($errorMsg)){ echo $errorMsg; } ?></span>
                 </form>
 
-   
+            <?php } else { ?>
+            <p class="denied-msg">Vous n'avez pas accès à cette ressource</p>
+            <?php } ?>
 
         </div>
     

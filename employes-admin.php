@@ -1,13 +1,15 @@
 <?php 
-require('actions/securityAction.php');
 require('actions/users/getEmployeesAction.php');
+require('actions/securityAction.php');
 include 'pages/includes/html-head.php';
 ?>
 
     <body>
         <?php include 'pages/includes/navbar-admin.php'; ?>
-
+        
+        
         <div class="admin-section employees-management">
+            <?php if($_SESSION['is_admin'] == "1"){ ?>
             
                 <div class="admin-title">Liste des employés</div>
 
@@ -27,29 +29,12 @@ include 'pages/includes/html-head.php';
                         </li>
                     <?php } ?>
                 </ul>
-           
-
-            <!--- MODAL 
-            <div class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4>Ajouter un employé</h4>
-                        <span class="close-modal"><i class="fas fa-times" id="close"></i></span>
-                    </div>
-                    <form class="add-modal" method="POST">
-                        <label for="employeeUsername" class="modal-label">Nom d'utilisateur</label>
-                        <input type="text" class="modal-input form_data" name="employeeUsername">
-                        <label for="employeeEmail" class="modal-label">Adresse email</label>
-                        <input type="text" class="modal-input form_data" name="employeeEmail">
-                        <label for="employeePassword" class="modal-label">Mot de passe <span>(minimum 6 caractères, 1 Majuscule, 1 Chiffre, 1 Caractère spécial)</span></label>
-                        <input type="text" class="modal-input form_data" name="employeePassword">
-                        <button class="btn-add-modal" type="submit" name="createEmployee" id="submit">Ajouter</button>
-                    </form> 
-                </div>
-            </div> --->
-
+            <?php } else { ?>
+            <p class="denied-msg">Vous n'avez pas accès à cette ressource</p>
+            <?php } ?>
         </div>
-    
+        
+
         <!-- JS -->
         <script src="./src/js/app.js"></script>
 
