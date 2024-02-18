@@ -35,7 +35,7 @@ include 'pages/includes/html-head.php';
                             
                             <div class="filter-btns">
                                 <button type="submit" class="filter-btn"><i class="fas fa-plus"></i> Filtrer</button>
-                                <a class="filter-btn"><i class="fas fa-minus"></i> Supprimer les filtres</a>
+                                <a class="filter-btn" href="/autos-occasion.php"><i class="fas fa-minus"></i> Supprimer les filtres</a>
                             </div>
                             
                         </form>   
