@@ -18,6 +18,7 @@ $gray: #454545;
 $bg-color: #fafafa;
 $white: #ffffff;
 $light: #ececec;
+$blue: #0390d2;
 
 $border-radius: 5px;
 
@@ -28,7 +29,7 @@ $border-radius: 5px;
   border-radius: $border-radius;
   border: none;
   color: $white;
-  background-color: #d92332;
+  background-color: $red;
   font-size: 1.1rem;
   cursor: pointer;
   &:hover {
@@ -140,8 +141,8 @@ body {
     }
 
     .modify-btn {
-      border: 2px solid #0390d2;
-      color: #0390d2;
+      border: 2px solid $blue;
+      color: $blue;
     }
 
     .delete-btn {

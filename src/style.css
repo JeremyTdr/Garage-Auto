@@ -549,9 +549,14 @@ footer .footer-items .footer-contact .contact-infos .fas {
   width: 120px;
 }
 .occasions-management .filter-section .filter-content .filters .filter input {
-  width: 60px;
+  width: 85px;
+  font-size: 1rem;
 }
-.occasions-management .filter-section .filter-btn {
+.occasions-management .filter-section .filter-btns {
+  margin-top: 20px;
+  display: flex;
+}
+.occasions-management .filter-section .filter-btns .filter-btn {
   width: fit-content;
   margin: 0 auto;
   padding: 12px 15px;
@@ -561,11 +566,12 @@ footer .footer-items .footer-contact .contact-infos .fas {
   background-color: #d92332;
   font-size: 1.1rem;
   cursor: pointer;
-  margin-top: 20px;
-  margin-right: 0;
 }
-.occasions-management .filter-section .filter-btn:hover {
+.occasions-management .filter-section .filter-btns .filter-btn:hover {
   background-color: #d9777f;
+}
+.occasions-management .filter-section .filter-btns button {
+  background-color: #0390d2 !important;
 }
 .occasions-management .occasions-list {
   display: flex;
@@ -651,6 +657,10 @@ footer .footer-items .footer-contact .contact-infos .fas {
   }
   .occasions-management .filter-section .filter-content .filters .filter span {
     margin: 0 10px;
+  }
+  .occasions-management .filter-section .filter-content .filters .filter input {
+    width: 65px;
+    font-size: 0.9rem;
   }
   .occasions-management .occasions-list {
     flex-direction: row;

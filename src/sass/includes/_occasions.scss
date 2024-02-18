@@ -27,16 +27,24 @@
             width: 120px;
           }
           input {
-            width: 60px;
+            width: 85px;
+            font-size: 1rem;
           }
         }
       }
     }
 
-    .filter-btn {
-      @include button;
+    .filter-btns {
       margin-top: 20px;
-      margin-right: 0;
+      display: flex;
+
+      .filter-btn {
+        @include button;
+      }
+
+      button {
+        background-color: $blue !important;
+      }
     }
   }
 
@@ -137,6 +145,11 @@
             }
             span {
               margin: 0 10px;
+            }
+
+            input {
+              width: 65px;
+              font-size: 0.9rem;
             }
           }
         }
