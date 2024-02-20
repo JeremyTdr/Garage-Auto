@@ -35,8 +35,8 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
         $new_offer_price = htmlspecialchars($_POST['occasionPrice']);
         $new_offer_year = htmlspecialchars($_POST['occasionYear']);
         $new_offer_kms = htmlspecialchars($_POST['occasionKm']);
-        $new_offer_description = htmlspecialchars($_POST['occasionDesc']);
-        $new_offer_options = htmlspecialchars($_POST['occasionOptions']);
+        $new_offer_description = nl2br(htmlspecialchars($_POST['occasionDesc']));
+        $new_offer_options = nl2br(htmlspecialchars($_POST['occasionOptions']));
         //$new_offer_img = htmlspecialchars($_POST['occasionImg']);
         
 

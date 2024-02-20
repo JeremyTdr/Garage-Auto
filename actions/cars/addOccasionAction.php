@@ -15,8 +15,8 @@ if(isset($_POST['createOccasion'])){
         $occasion_price = htmlspecialchars($_POST['occasionPrice']);
         $occasion_year = htmlspecialchars($_POST['occasionYear']);
         $occasion_km = htmlspecialchars($_POST['occasionKm']);
-        $occasion_description = htmlspecialchars($_POST['occasionDesc']);
-        $occasion_options = htmlspecialchars($_POST['occasionOptions']);
+        $occasion_description = nl2br(htmlspecialchars($_POST['occasionDesc']));
+        $occasion_options = nl2br(htmlspecialchars($_POST['occasionOptions']));
 
         // Gestion de l'image    
         $file_name = $_FILES['occasionImg']['name'];

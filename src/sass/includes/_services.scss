@@ -31,9 +31,13 @@
         }
 
         .service-card-description {
-          font-weight: 300;
-          font-size: 1rem;
-          text-align: justify;
+          margin: auto;
+
+          p {
+            font-weight: 300;
+            font-size: 1rem;
+            text-align: center;
+          }
         }
       }
     }
@@ -62,14 +66,23 @@
             position: absolute;
             width: 240px;
             height: 230px;
-            font-weight: 300;
-            text-align: justify;
+
             color: $white;
             padding: 15px;
             border-radius: $border-radius;
             background-color: black;
             opacity: 0.8;
             display: none;
+
+            p {
+              position: relative;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 1.1rem;
+              font-weight: 300;
+              text-align: center;
+            }
           }
         }
 

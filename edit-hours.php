@@ -15,9 +15,11 @@ include 'pages/includes/html-head.php';
             <div class="admin-title">Modifier les horaires</div>
 
                 <form class="form-edit-hours" method="POST" enctype="multipart/form-data">
-                    <a href="./hours.php" class="return-btn"><i class="fas fa-chevron-left"></i> Retour</a>
+                    <a href="./hours-admin.php" class="return-btn"><i class="fas fa-chevron-left"></i> Retour</a>
             
-                    <?php while($schedule = $getSchedules->fetch()){?>
+                    <?php 
+                        while($schedule = $getSchedules->fetch()){
+                    ?>
                         <div class="hours-day"><?= $schedule['day']; ?></div>
 
                         <div class="select-hours">
@@ -32,6 +34,11 @@ include 'pages/includes/html-head.php';
                                 <option value="10h30">10h30</option>
                                 <option value="11h">11h</option>
                                 <option value="11h30">11h30</option>
+                                <option value="12h">12h</option>
+                                <option value="12h30">12h30</option>
+                                <option value="13h">13h</option>
+                                <option value="13h30">13h30</option>
+                                <option value="14h">14h</option>
                                 <option value="Fermé">Fermé</option>
                             </select>
                             <span>-</span>
@@ -45,6 +52,11 @@ include 'pages/includes/html-head.php';
                                 <option value="10h30">10h30</option>
                                 <option value="11h">11h</option>
                                 <option value="11h30">11h30</option>
+                                <option value="12h">12h</option>
+                                <option value="12h30">12h30</option>
+                                <option value="13h">13h</option>
+                                <option value="13h30">13h30</option>
+                                <option value="14h">14h</option>
                                 <option value="Fermé">Fermé</option>
                             </select>
                         </div>

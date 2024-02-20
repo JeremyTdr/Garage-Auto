@@ -15,7 +15,7 @@ if (getenv('JAWSDB_URL') !== false) {
     $hostname = 'localhost:8889';
     $username = 'root';
     $password = 'root';
-    $database = 'garage_auto';
+    $database = 'garage_auto2';
 }
 
 try {

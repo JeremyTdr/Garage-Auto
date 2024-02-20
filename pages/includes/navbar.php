@@ -1,6 +1,6 @@
 <nav class="nav">
 
-    <img class="logo" src="src/assets/logo-nobg.png" alt="logo du garage"></img>    
+    <img class="logo" src="src/assets/logo-nobg.png" alt="logo du garage" onclick="location.href = '/'"></img>    
 
     <div class="nav-items" id="nav-items">
         <a class="nav-item" href="/">Accueil</a>

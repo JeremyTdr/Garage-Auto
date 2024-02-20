@@ -9,7 +9,9 @@ require('actions/services/getServicesAction.php');
                 <div class="service-card">
                     <div class="service-card-title"><?= $service['title']; ?></div>
                     <hr>
-                    <div class="service-card-description"><?= $service['description']; ?></div>
+                    <div class="service-card-description">
+                        <p><?= $service['description']; ?></p>
+                    </div>
                 </div>    
             <?php } ?>
         </div>
